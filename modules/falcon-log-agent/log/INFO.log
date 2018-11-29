@@ -1,0 +1,36 @@
+2018-11-29 15:11:39.234608 INFO g/strategy.go:29 use strategy file : /Users/huayuev5/Work_Place/Go_Work_Place/src/github.com/huayuev5/my_go_land/modules/falcon-log-agent/cfg/strategy.dev.json
+2018-11-29 15:11:39.234623 INFO falcon-log-agent/main.go:21 bind [1] cpu core
+2018-11-29 15:11:39.235069 INFO worker/push.go:54 PosterLoop Start
+2018-11-29 15:11:39.235077 INFO worker/push.go:83 PushLoop Start
+2018-11-29 15:11:39.235123 INFO strategy/update.go:20 [1543475499]Update Strategy start
+2018-11-29 15:11:39.235569 INFO strategy/get_config.go:23 load config success from /Users/huayuev5/Work_Place/Go_Work_Place/src/github.com/huayuev5/my_go_land/modules/falcon-log-agent/cfg/strategy.dev.json
+2018-11-29 15:11:39.235638 INFO strategy/update.go:29 [1543475499]Get my Strategy success, num : [1]
+2018-11-29 15:11:39.235646 INFO strategy/update.go:36 [1543475499]Update Strategy end
+2018-11-29 15:11:39.235757 INFO worker/control.go:50 Get new strategyMap {"1":{"id":1,"name":"流量500错误数","file_path":"/Users/huayuev5/test.log","time_format":"yyyy-mm-dd HH:MM:SS","pattern":"Return Success : \\(awefafas\\)s Used","exclude":"unimport-request","step":10,"tags":{},"func":"cnt","degree":6,"comment":"我是备注","parse_succ":true}}
+2018-11-29 15:11:39.238118 INFO worker/control.go:114 Add Reader : [/Users/huayuev5/test.log]
+2018-11-29 15:11:39.238146 INFO worker/worker.go:80 new worker group, [file:/Users/huayuev5/test.log][worker_num:10]
+2018-11-29 15:11:39.238181 INFO worker/control.go:125 Create job success [filePath:/Users/huayuev5/test.log][sid:1]
+2018-11-29 15:11:39.238191 INFO worker/counter.go:273 Updating global count
+2018-11-29 15:11:39.238204 INFO worker/counter.go:304 Update global count done, [del:0][update:0]
+2018-11-29 15:11:39.239147 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:0]]
+2018-11-29 15:11:39.239168 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:1]]
+2018-11-29 15:11:39.239275 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:2]]
+2018-11-29 15:11:39.239655 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:3]]
+2018-11-29 15:11:39.240138 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:4]]
+2018-11-29 15:11:39.240585 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:5]]
+2018-11-29 15:11:39.240893 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:6]]
+2018-11-29 15:11:39.241171 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:7]]
+2018-11-29 15:11:39.241482 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:8]]
+2018-11-29 15:11:39.241911 INFO worker/worker.go:133 worker starting...[[worker][file:/Users/huayuev5/test.log][num:10][id:9]]
+2018-11-29 15:12:19.322809 INFO worker/worker.go:176 Revice line data.......
+2018-11-29 15:12:19.323218 INFO worker/worker.go:253 FFFFFFFFFFFFFaild.
+2018-11-29 15:12:35.298863 INFO worker/worker.go:176 Revice line data.......
+2018-11-29 15:12:35.299080 INFO worker/worker.go:188 SSSSSSSSSSSSucesssed.
+2018-11-29 15:12:35.437083 INFO worker/push.go:197 to falcon agent: [{"endpoint":"huayuev5s-MacBook-Pro.local","metric":"流量500错误数","timestamp":1538128810,"step":10,"value":1,"counterType":"GAUGE","tags":""}]
+2018-11-29 15:12:39.240626 INFO strategy/update.go:20 [1543475559]Update Strategy start
+2018-11-29 15:12:39.241998 INFO strategy/get_config.go:23 load config success from /Users/huayuev5/Work_Place/Go_Work_Place/src/github.com/huayuev5/my_go_land/modules/falcon-log-agent/cfg/strategy.dev.json
+2018-11-29 15:12:39.242077 INFO strategy/update.go:29 [1543475559]Get my Strategy success, num : [1]
+2018-11-29 15:12:39.242084 INFO strategy/update.go:36 [1543475559]Update Strategy end
+2018-11-29 15:12:39.242122 INFO worker/control.go:50 Get new strategyMap {"1":{"id":1,"name":"流量500错误数","file_path":"/Users/huayuev5/test.log","time_format":"yyyy-mm-dd HH:MM:SS","pattern":"Return Success : \\(awefafas\\)s Used","exclude":"unimport-request","step":10,"tags":{},"func":"cnt","degree":6,"comment":"我是备注","parse_succ":true}}
+2018-11-29 15:12:39.255062 INFO worker/counter.go:273 Updating global count
+2018-11-29 15:12:39.255084 INFO worker/counter.go:304 Update global count done, [del:0][update:0]

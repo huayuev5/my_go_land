@@ -15,17 +15,29 @@ import (
 	"github.com/huayuev5/my_go_land/modules/falcon-log-agent/common/proc/metric"
 
 	"github.com/parnurzeal/gorequest"
+	"github.com/open-falcon/falcon-plus/common/log_tail/logutils"
 )
 
 // FalconPoint to push to falcon-agent
+//type FalconPoint struct {
+//	Endpoint    string  `json:"endpoint"`
+//	Metric      string  `json:"metric"`
+//	Timestamp   int64   `json:"timestamp"`
+//	Step        int64   `json:"step"`
+//	Value       float64 `json:"value"`
+//	CounterType string  `json:"counterType"`
+//	Tags        string  `json:"tags"`
+//}
+
 type FalconPoint struct {
-	Endpoint    string  `json:"endpoint"`
-	Metric      string  `json:"metric"`
-	Timestamp   int64   `json:"timestamp"`
-	Step        int64   `json:"step"`
-	Value       float64 `json:"value"`
-	CounterType string  `json:"counterType"`
-	Tags        string  `json:"tags"`
+	Endpoint  string      `json:"endpoint"`
+	Metric    string      `json:"metric"`
+	Value     interface{} `json:"value"`
+	Step      int64       `json:"step"`
+	Type      string      `json:"counterType"`
+	Tags      string      `json:"tags"`
+	Timestamp int64       `json:"timestamp"`
+	Hostip    string      `json:"hostip"`
 }
 
 // SortByTms to be used by sort
@@ -167,12 +179,13 @@ func ToPushQueue(strategy *scheme.Strategy, tms int64, pointMap map[string]*Poin
 
 		tmpPoint := &FalconPoint{
 			Endpoint:    hostname,
-			Metric:      strategy.Name,
+			Metric:      "system.logtail.keyword.num",
 			Timestamp:   tms,
 			Step:        strategy.Interval,
-			Value:       value,
-			Tags:        utils.SortedTags(tags),
-			CounterType: "GAUGE",
+			Value:       int64(value),
+			Tags:        logutils.SortedTags(tags),
+			Type:        "GAUGE",
+			Hostip:      "192.168.0.1",
 		}
 		pushQueue <- tmpPoint
 	}

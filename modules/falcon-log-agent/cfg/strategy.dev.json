@@ -2,7 +2,7 @@
     {
       "id":1,
       "name":"流量500错误数",
-      "file_path":"/xxx/test.log",
+      "file_path":"/Users/huayuev5/test.log",
       "time_format":"yyyy-mm-dd HH:MM:SS",
       "pattern":"Return Success : \\(awefafas\\)s Used",
       "exclude":"unimport-request",

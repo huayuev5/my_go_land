@@ -26,9 +26,9 @@ func init() {
 	go CleanLoop()
 }
 
-func (c *counterCache) AddPoint(tms int64, value float64) {
+func (c *counterCache) AddPoint(tms int64, value interface{}) {
 	c.Lock()
-	c.Points[tms] = value
+	c.Points[tms] = value.(float64)
 	c.Unlock()
 }
 
