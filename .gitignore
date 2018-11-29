@@ -1,0 +1,9 @@
+bin/
+out/
+*.swp
+*.swo
+*.tar.gz
+/.idea
+docs/_site
+cfg_test
+.DS_Store
