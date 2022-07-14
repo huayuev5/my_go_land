@@ -7,4 +7,5 @@ import (
 
 func main() {
 // add some content
+// delete some content
 }
