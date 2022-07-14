@@ -7,7 +7,11 @@ import (
 
 func main() {
 // add some content
+<<<<<<< HEAD
 // nothing1
 
 // nothing
+=======
+// delete some content
+>>>>>>> fdec534 (delete some content)
 }
