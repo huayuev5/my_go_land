@@ -6,11 +6,8 @@ import (
 )
 
 func main() {
-<<<<<<< HEAD
 // 4
 // 3
-=======
->>>>>>> 901f14e (2)
 // 2
 // add some content
 // nothing1
